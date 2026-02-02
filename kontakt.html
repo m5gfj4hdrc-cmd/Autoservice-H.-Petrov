@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – Autoservice H. Petrov</title>
+
+<style>
+body{font-family:Arial;margin:0;line-height:1.6}
+header,footer{background:#1f1f1f;color:#fff;padding:1rem 2rem}
+section{max-width:1000px;margin:auto;padding:3rem 2rem}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:2rem 0}
+.contact-box{background:#f5f5f5;padding:1.5rem;border-radius:6px}
+.contact-box h3{color:#c62828;margin-bottom:1rem}
+.contact-item{margin:1rem 0;display:flex;align-items:start;gap:0.7rem}
+.contact-item strong{min-width:100px}
+form{display:grid;gap:1rem;background:#f5f5f5;padding:2rem;border-radius:6px;margin:2rem 0}
+input,textarea{padding:0.8rem;font-size:1rem;border:1px solid #ddd;border-radius:4px}
+button{background:#c62828;color:#fff;border:none;padding:0.9rem 1.8rem;font-size:1rem;border-radius:4px;cursor:pointer;transition:0.2s}
+button:hover{background:#a02020}
+
+.map-placeholder{
+  background:#e0e0e0;
+  height:300px;
+  border-radius:6px;
+  margin:2rem 0;
+  overflow:hidden; /* wichtig */
+}
+
+.map-placeholder iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+  
+.opening-hours{background:#fff;border:2px solid #c62828;border-radius:6px;padding:1.5rem}
+.hours-row{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #eee}
+.hours-row:last-child{border-bottom:none}
+</style>
+</head>
+
+<body>
+<header>
+  <a href="index.html" style="color:#fff">← Zurück zur Startseite</a>
+</header>
+
+<section>
+<h1>Kontakt & Anfahrt</h1>
+<p>Sie haben Fragen oder möchten einen Termin vereinbaren? Wir sind für Sie da!</p>
+
+<div class="contact-grid">
+  <div class="contact-box">
+    <h3>📍 Adresse</h3>
+    <p>
+      <strong>Autoservice H. Petrov</strong><br>
+      Musterstraße 123<br>
+      63571 Gelnhausen
+    </p>
+  </div>
+
+  <div class="contact-box">
+    <h3>📞 Telefon & E-Mail</h3>
+    <div class="contact-item">
+      <strong>Telefon:</strong>
+      <span>06051 / 123456</span>
+    </div>
+    <div class="contact-item">
+      <strong>Mobil:</strong>
+      <span>0171 / 1234567</span>
+    </div>
+    <div class="contact-item">
+      <strong>E-Mail:</strong>
+      <span>info@autoservice-petrov.de</span>
+    </div>
+  </div>
+</div>
+
+<div class="opening-hours">
+  <h3 style="color:#c62828;margin-bottom:1rem">🕐 Öffnungszeiten</h3>
+  <div class="hours-row">
+    <strong>Montag – Freitag:</strong>
+    <span>08:00 – 18:00 Uhr</span>
+  </div>
+  <div class="hours-row">
+    <strong>Samstag:</strong>
+    <span>09:00 – 13:00 Uhr</span>
+  </div>
+  <div class="hours-row">
+    <strong>Sonntag:</strong>
+    <span>Geschlossen</span>
+  </div>
+  <p style="margin-top:1rem;color:#666;font-size:0.9rem">
+    <em>Termine außerhalb der Öffnungszeiten nach Vereinbarung möglich.</em>
+  </p>
+</div>
+
+<h2 style="margin-top:3rem">Terminanfrage</h2>
+<p>Nutzen Sie unser Kontaktformular für eine schnelle Terminanfrage. Wir melden uns zeitnah bei Ihnen zurück.</p>
+
+<form>
+  <input type="text" placeholder="Ihr Name *" required>
+  <input type="email" placeholder="Ihre E-Mail-Adresse *" required>
+  <input type="tel" placeholder="Telefonnummer">
+  <input type="text" placeholder="Fahrzeugmarke & Modell">
+  <select required>
+    <option value="">Gewünschte Leistung auswählen *</option>
+    <option>Inspektion</option>
+    <option>Ölwechsel</option>
+    <option>Reifenwechsel</option>
+    <option>Bremsenservice</option>
+    <option>HU / AU</option>
+    <option>Klimaservice</option>
+    <option>Reparatur / Diagnose</option>
+    <option>Sonstiges</option>
+  </select>
+  <input type="date" placeholder="Wunschtermin">
+  <textarea rows="5" placeholder="Ihre Nachricht / Beschreibung des Problems"></textarea>
+  <button type="submit">Anfrage senden</button>
+  <p style="margin:0;font-size:0.9rem;color:#666">* Pflichtfelder</p>
+</form>
+
+<div class="map-placeholder">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.6258720736855!2d9.173618799999998!3d50.205523799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd259d4e895303%3A0x76edc8cfd3cc1178!2sAutoservice%20H.Petrov!5e0!3m2!1sde!2sde!4v1770021384849!5m2!1sde!2sde"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+  
+<p><strong>Anfahrtsbeschreibung:</strong></p>
+<p>
+  Von der A66 nehmen Sie die Abfahrt <strong>Gelnhausen-West</strong> oder <strong>Gelnhausen-Ost</strong> 
+  und folgen der Beschilderung Richtung <strong>Gelnhausen / Stadtmitte</strong>. 
+  Sie gelangen auf die <strong>Frankfurter Straße (B40)</strong>.
+</p>
+<p>
+  Folgen Sie der Frankfurter Straße stadteinwärts. 
+  Der <strong>Autoservice H. Petrov</strong> befindet sich in der <strong>Frankfurter Straße 40</strong> 
+  auf der rechten Seite.
+</p>
+<p>
+  <strong>Parkmöglichkeiten</strong> stehen direkt vor der Werkstatt sowie in unmittelbarer Umgebung zur Verfügung.
+</p>
+
+</section>
+
+<footer>
+  <p>© 2026 Autoservice H. Petrov | <a href="index.html" style="color:#fff">Startseite</a></p>
+</footer>
+</body>
+</html>
